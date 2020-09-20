@@ -97,7 +97,7 @@ const IndexPage = () => (
     <Section
       image={require("../images/section1.png")}
       logo={require("../images/logo-react.png")}
-      title="New React Project"
+      title="New Project"
       text="What was beyond the bend in the stream was unknown."
     />
     <SectionCaption>Many Features and more</SectionCaption>
