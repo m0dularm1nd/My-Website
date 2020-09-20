@@ -1,4 +1,27 @@
 .page {
-  padding: 100px auto;
-  background-color: black;
+  background: url("../images/Background1.png");
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.page h1 {
+  margin: 0;
+  color: white;
+  font-size: 50px;
+  line-height: 1.2;
+}
+.page p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 30;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+
+.pageGroup {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 150px 50px;
+  text-align: center;
 }
