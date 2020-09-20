@@ -36,7 +36,7 @@ const IndexPage = () => (
       <div className="HeroGroup">
         <h1>Welcome to MindScape</h1>
         <p>Observer of the Phenomenon</p>
-        <Link to="">More Info</Link> <br />
+        <Link to="">More Info...</Link> <br />
         <div className="logos">
           <img
             src={require("../images/logo-xcode.png")}
