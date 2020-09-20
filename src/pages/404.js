@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import "../components/404.css"
+import Wave from "../components/Wave.js"
 
 const NotFoundPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const NotFoundPage = () => (
         <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
       </div>
     </div>
+    <Wave />
   </Layout>
 )
 
