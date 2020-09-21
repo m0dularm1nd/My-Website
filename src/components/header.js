@@ -38,10 +38,10 @@ class Header extends React.Component {
               alt="test"
             />
           </Link>
-          <Link to="/contents/">Contents</Link>
-          <Link to="/about/">About</Link>
-          <Link to="/contact/">Contact</Link>
-          <Link to="/store/">
+          <Link to="#">Contents</Link>
+          <Link to="#">About</Link>
+          <Link to="#">Contact</Link>
+          <Link to="#">
             <button>Store</button>
           </Link>
         </div>
