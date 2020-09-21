@@ -79,28 +79,28 @@ const IndexPage = () => (
       <div className="CardGroup">
         <Card
           title="First Wave"
-          text="10$"
+          text="100$"
           image={require("../images/card2.png")}
         />
         <Card
           title="Sec Wave"
-          text="20$"
-          image={require("../images/card5.png")}
+          text="200$"
+          image={require("../images/card6.png")}
         />
         <Card
           title="Third Wave"
-          text="30$"
-          image={require("../images/card3.png")}
+          text="300$"
+          image={require("../images/card7.png")}
         />
       </div>
     </div>
     <Section
-      image={require("../images/section1.png")}
-      logo={require("../images/logo-react.png")}
+      image={require("../images/card5.png")}
+      logo={require("../images/gif.gif")}
       title="New Project"
       text="What was beyond the bend in the stream was unknown."
     />
-    <SectionCaption>Many Features and more</SectionCaption>
+    <SectionCaption>Features and Tech</SectionCaption>
     <SectionContentGroup>
       {StaticData.cells.map(cell => (
         <Cell title={cell.title} image={cell.image} />

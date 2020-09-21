@@ -15,6 +15,7 @@ const SectionGroup = styled.div`
 const SectionLogo = styled.img`
   align-self: end;
   width: 128px;
+
   margin: 0 auto;
 `
 const SectionTitleGroup = styled.div`
