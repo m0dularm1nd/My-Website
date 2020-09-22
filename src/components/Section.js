@@ -8,13 +8,13 @@ const SectionGroup = styled.div`
   background-size: cover;
   background-position: center;
   display: grid;
-  grid-template-rows: 300px auto;
+  grid-template-rows: 350px auto;
   grid-gap: 20px;
   position: relative;
 `
 const SectionLogo = styled.img`
   align-self: end;
-  width: 128px;
+  width: 150px;
 
   margin: 0 auto;
 `
@@ -29,6 +29,7 @@ const SectionTitleGroup = styled.div`
 
   @media (max-width: 720px) {
     grid-template-columns: 1fr;
+    grid-gap: 5px;
   }
 `
 const SectionTitle = styled.h3`
@@ -36,6 +37,10 @@ const SectionTitle = styled.h3`
   font-size: 60px;
   margin: 0 auto;
   line-height: 1.2;
+  background: linear-gradient(104deg, white 0%, #70a893 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @media (max-width: 720px) {
     font-size: 45px;
@@ -43,6 +48,7 @@ const SectionTitle = styled.h3`
 `
 const SectionText = styled.p`
   color: white;
+  white-space: pre-wrap;
 `
 const WaveBottom = styled.div`
   position: absolute;

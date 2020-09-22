@@ -78,17 +78,17 @@ const IndexPage = () => (
       </h2>
       <div className="CardGroup">
         <Card
-          title="First Wave"
+          title="Component based"
           text="100$"
           image={require("../images/card2.png")}
         />
         <Card
-          title="Sec Wave"
+          title="Add or Edit more Content"
           text="200$"
           image={require("../images/card6.png")}
         />
         <Card
-          title="Third Wave"
+          title="Dynamic Data using API"
           text="300$"
           image={require("../images/card7.png")}
         />
@@ -97,8 +97,9 @@ const IndexPage = () => (
     <Section
       image={require("../images/card5.png")}
       logo={require("../images/gif.gif")}
-      title="New Project"
-      text="What was beyond the bend in the stream was unknown."
+      title="Greatness Ahead,"
+      text={`What was beyond the bend in the stream was unknown,
+Layout built using CSS grids and styled compenents from scratch.`}
     />
     <SectionCaption>Features and Tech</SectionCaption>
     <SectionContentGroup>
