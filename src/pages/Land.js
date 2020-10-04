@@ -30,88 +30,86 @@ const SectionContentGroup = styled.div`
 `
 
 const Land = () => (
-  <Suspense fallback={<div className="load">loading......</div>}>
-    <Layout>
-      <SEO title="Home" />
-      <div className="HOME">
-        <div className="Hero">
-          <div className="HeroGroup">
-            <h1>Welcome to MindScape</h1>
-            <p>Observer of the Phenomenon</p>
-            <Link to="#">More Info...</Link> <br />
-            <div className="logos">
-              <img
-                src={require("../images/logo-xcode.png")}
-                width="50"
-                alt="test"
-              />
-              <img
-                src={require("../images/logo-figma.png")}
-                width="50"
-                alt="test"
-              />
-              <img
-                src={require("../images/logo-swift.png")}
-                width="50"
-                alt="test"
-              />
-              <img
-                src={require("../images/logo-react.png")}
-                width="50"
-                alt="test"
-              />
-              <img
-                src={require("../images/logo-sketch.png")}
-                width="50"
-                alt="test"
-              />
-              <img
-                src={require("../images/logo-gatsby.png")}
-                width="50"
-                alt="test"
-              />
-            </div>
-            <Wave />
-          </div>
-        </div>
-        <div className="Cards">
-          <h2>
-            Discover,<br></br> The WaveStore
-          </h2>
-          <div className="CardGroup">
-            <Card
-              title="Component based"
-              text="100$"
-              image={require("../images/card2.png")}
+  <Layout>
+    <SEO title="Home" />
+    <div className="HOME">
+      <div className="Hero">
+        <div className="HeroGroup">
+          <h1>Welcome to MindScape</h1>
+          <p>Observer of the Phenomenon</p>
+          <Link to="#">More Info...</Link> <br />
+          <div className="logos">
+            <img
+              src={require("../images/logo-xcode.png")}
+              width="50"
+              alt="test"
             />
-            <Card
-              title="Add or Edit more Content"
-              text="200$"
-              image={require("../images/card6.png")}
+            <img
+              src={require("../images/logo-figma.png")}
+              width="50"
+              alt="test"
             />
-            <Card
-              title="Dynamic Data using API"
-              text="300$"
-              image={require("../images/card7.png")}
+            <img
+              src={require("../images/logo-swift.png")}
+              width="50"
+              alt="test"
+            />
+            <img
+              src={require("../images/logo-react.png")}
+              width="50"
+              alt="test"
+            />
+            <img
+              src={require("../images/logo-sketch.png")}
+              width="50"
+              alt="test"
+            />
+            <img
+              src={require("../images/logo-gatsby.png")}
+              width="50"
+              alt="test"
             />
           </div>
+          <Wave />
         </div>
-        <Section
-          image={require("../images/card5.png")}
-          logo={require("../images/gif.gif")}
-          title="Greatness Ahead,"
-          text={`What was beyond the bend in the stream was unknown,
-Layout built using CSS grids and styled compenents from scratch.`}
-        />
-        <SectionCaption>Features and Tech</SectionCaption>
-        <SectionContentGroup>
-          {StaticData.cells.map(cell => (
-            <Cell title={cell.title} image={cell.image} />
-          ))}
-        </SectionContentGroup>
       </div>
-    </Layout>
-  </Suspense>
+      <div className="Cards">
+        <h2>
+          Discover,<br></br> The WaveStore
+        </h2>
+        <div className="CardGroup">
+          <Card
+            title="Component based"
+            text="100$"
+            image={require("../images/card2.png")}
+          />
+          <Card
+            title="Add or Edit more Content"
+            text="200$"
+            image={require("../images/card6.png")}
+          />
+          <Card
+            title="Dynamic Data using API"
+            text="300$"
+            image={require("../images/card7.png")}
+          />
+        </div>
+      </div>
+      <Section
+        image={require("../images/card5.png")}
+        logo={require("../images/gif.gif")}
+        title="Greatness Ahead,"
+        text={`What was beyond the bend in the stream was unknown,
+Layout built using CSS grids and styled compenents from scratch.`}
+      />
+      <SectionCaption>Features and Tech</SectionCaption>
+      <SectionContentGroup>
+        {StaticData.cells.map(cell => (
+          <Cell title={cell.title} image={cell.image} />
+        ))}
+      </SectionContentGroup>
+    </div>
+  </Layout>
 )
 
 export default Land

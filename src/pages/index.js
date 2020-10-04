@@ -1,5 +1,4 @@
-import React, { Component, lazy, Suspense } from "react"
-import { Link } from "gatsby"
+import React, { lazy, Suspense } from "react"
 
 import Indexx from "../components/indexx.js"
 
@@ -10,16 +9,7 @@ const Land = lazy(() => import("./Land.js"))
 const Indexpage = () => (
   <Indexx>
     <SEO title="Loading" />
-    <Suspense
-      fallback={
-        <div className="page">
-          <div className="pageGroup">
-            <h1>Loading,,</h1>
-            <p>pls wait</p>
-          </div>
-        </div>
-      }
-    >
+    <Suspense fallback={<div className="page">LOAD</div>}>
       <Land></Land>
     </Suspense>
   </Indexx>
