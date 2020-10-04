@@ -4,7 +4,7 @@ import Wave from "./Wave.js"
 
 const SectionGroup = styled.div`
   background: url(${props => props.image});
-  height: 820px;
+  height: 850px;
   background-size: cover;
   background-position: center;
   display: grid;

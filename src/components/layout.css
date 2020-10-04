@@ -28,6 +28,10 @@ a {
   text-decoration: none;
   font-weight: 600;
 }
+.load {
+  color: #5334f5;
+}
+
 .Hero {
   background: url("../images/Background1.png");
   height: 800px;

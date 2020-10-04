@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `MindScape`,
     description: `New Horizions`,
-    author: `The Man`,
+    author: `Mohamed Gamal`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,7 +31,7 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: {
         spaceId: "26oss0q2rua8",
-        accessToken: "zI6qK2TX1SMtQqznsxHko0CRvJ8w1XgOe-ibUzlgELI",
+        accessToken: "aQ6zEYvUOeydMlDyrsCZMZOpv9nZs8lE585j0JLFpH4",
       },
     },
   ],
