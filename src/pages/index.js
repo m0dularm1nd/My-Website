@@ -10,6 +10,17 @@ import Wave from "../components/Wave.js"
 import StaticData from "../../StaticData.json"
 import Cell from "../components/Cell.js"
 
+
+class ScrollToTopOnMount extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
+  render() {
+    return null;
+  }
+}
+
 const SectionCaption = styled.p`
   font-weight: 700;
   font-size: 24px;
@@ -32,6 +43,7 @@ const SectionContentGroup = styled.div`
 const Land = () => (
   <Layout>
     <SEO title="Home" />
+    <ScrollToTopOnMount />
     <div className="HOME">
       <div className="Hero">
         <div className="HeroGroup">
