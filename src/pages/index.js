@@ -37,7 +37,7 @@ const Land = () => (
         <div className="HeroGroup">
           <h1>Welcome to MindScape</h1>
           <p>Observer of the Phenomenon</p>
-          <Link to="#cards">More Info...</Link> <br />
+          <Link to="/gallery">More Info...</Link> <br />
           <div className="logos">
             <img
               src={require("../images/logo-xcode.png")}
