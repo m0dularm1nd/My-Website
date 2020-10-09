@@ -19,7 +19,8 @@ export default function HTML(props) {
         <div
               key={`loader`}
               id="___loader"
-              style={{
+          style={{
+                overflow: "hidden",
                 alignItems: "center",
                 backgroundColor: "#ffffff",
                 display: "flex",
@@ -30,8 +31,7 @@ export default function HTML(props) {
                 right: 0,
                 bottom: 0,
                 zIndex: 101,
-                overflow: "hidden",
-
+                
               }}
            >
            <img 
