@@ -41,7 +41,7 @@ class Header extends React.Component {
           <Link to="#cards">Contents</Link>
           <Link to="#info">About</Link>
           <Link to="#contact">Contact</Link>
-          <Link to="#">
+          <Link to="#contact">
             <button>Store</button>
           </Link>
         </div>
