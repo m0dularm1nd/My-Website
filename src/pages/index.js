@@ -37,7 +37,7 @@ const Land = () => (
         <div className="HeroGroup">
           <h1>Welcome to MindScape</h1>
           <p>Observer of the Phenomenon</p>
-          <Link to="#">More Info...</Link> <br />
+          <Link to="#cards">More Info...</Link> <br />
           <div className="logos">
             <img
               src={require("../images/logo-xcode.png")}
@@ -70,10 +70,12 @@ const Land = () => (
               alt="test"
             />
           </div>
-          <Wave />
+          <div id="cards">
+            <Wave />
+            </div>
         </div>
       </div>
-      <div className="Cards">
+      <div className="Cards" >
         <h2>
           Discover,<br></br> The WaveStore
         </h2>
@@ -95,19 +97,24 @@ const Land = () => (
           />
         </div>
       </div>
+      <div id="info">
       <Section
+        
         image={require("../images/card5.png")}
         logo={require("../images/gif.gif")}
         title="Greatness Ahead,"
         text={`What was beyond the bend in the stream was unknown,
 Layout built using CSS grids and styled compenents from scratch.`}
-      />
+        />
+      </div>
+      <div id="contact">
       <SectionCaption>Features and Tech</SectionCaption>
       <SectionContentGroup>
         {StaticData.cells.map(cell => (
           <Cell title={cell.title} image={cell.image} />
         ))}
-      </SectionContentGroup>
+        </SectionContentGroup>
+        </div>
     </div>
   </Layout>
 )
