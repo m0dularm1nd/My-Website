@@ -37,8 +37,8 @@ export default function HTML(props) {
            <img 
               src={LoaderSVG} 
               alt="loading spinner" 
-              width="75" 
-              height="75"
+              width="128" 
+              height="128"
            />
         </div>
         <div
