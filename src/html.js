@@ -21,7 +21,7 @@ export default function HTML(props) {
               id="___loader"
               style={{
                 alignItems: "center",
-                backgroundColor: "#000000",
+                backgroundColor: "#ffffff",
                 display: "flex",
                 justifyContent: "center",
                 position: "absolute",
@@ -37,8 +37,8 @@ export default function HTML(props) {
            <img 
               src={LoaderSVG} 
               alt="loading spinner" 
-              width="150" 
-              height="150"
+              width="75" 
+              height="75"
            />
         </div>
         <div
