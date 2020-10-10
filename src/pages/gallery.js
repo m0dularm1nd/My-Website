@@ -10,9 +10,9 @@ import Wave from "../components/Wave.js"
 
 const Gallery = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <SEO title="Gallery" />
     <div className="page">
-      <div className="pageGroup">
+    <div className="pageGroup">
         <h1>Gallery</h1>
       </div>
       <Wave />

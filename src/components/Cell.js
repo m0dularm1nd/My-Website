@@ -20,9 +20,9 @@ const CellTitle = styled.div`
 `
 
 const Cell = props => (
-  <CellGroup>
+  <CellGroup  >
     <CellImage image={props.image} />
-    <CellTitle>{props.title}</CellTitle>
+    <CellTitle >{props.title}</CellTitle>
   </CellGroup>
 )
 

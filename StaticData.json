@@ -1,26 +1,32 @@
 {
   "cells": [
     {
+      "id": "1",
       "title": "Component-Based layout",
       "image": "https://p12.f2.n0.cdn.getcloudapp.com/items/E0unxr4Z/logo-figma.png"
     },
     {
+      "id": "2",
       "title": "Modern Design and Cool Animations",
       "image": "https://p12.f2.n0.cdn.getcloudapp.com/items/E0unxr4Z/logo-figma.png"
     },
     {
+      "id": "3",
       "title": "Api Connected",
       "image": "https://p12.f2.n0.cdn.getcloudapp.com/items/E0unxr4Z/logo-figma.png"
     },
     {
+      "id": "4",
       "title": "Adpative on all Screens",
       "image": "https://p12.f2.n0.cdn.getcloudapp.com/items/E0unxr4Z/logo-figma.png"
     },
     {
+      "id": "5",
       "title": "E-Store (Coming Soon)",
       "image": "https://p12.f2.n0.cdn.getcloudapp.com/items/E0unxr4Z/logo-figma.png"
     },
     {
+      "id": "6",
       "title": "..Adding more",
       "image": "https://p12.f2.n0.cdn.getcloudapp.com/items/E0unxr4Z/logo-figma.png"
     }

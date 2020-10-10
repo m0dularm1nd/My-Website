@@ -9,6 +9,7 @@ import Section from "../components/Section.js"
 import Wave from "../components/Wave.js"
 import StaticData from "../../StaticData.json"
 import Cell from "../components/Cell.js"
+import uuid from 'react-uuid'
 
 
 class ScrollToTopOnMount extends React.Component {
@@ -123,7 +124,7 @@ Layout built using CSS grids and styled compenents from scratch.`}
       <SectionCaption>Features and Tech</SectionCaption>
       <SectionContentGroup>
         {StaticData.cells.map(cell => (
-          <Cell title={cell.title} image={cell.image} />
+          <Cell key={uuid()} title={cell.title} image={cell.image} />
         ))}
         </SectionContentGroup>
         </div>

@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import uuid from 'react-uuid'
 
 const FooterGroup = styled.div`
   background: #f1f3f5;
@@ -81,7 +82,7 @@ const Footer = ({ data }) => (
 
     <LinkGroup>
       {data.allContentfulMyWebsiteLink.edges.map(edge => (
-        <a href={edge.node.url}>{edge.node.title}</a>
+        <a key={uuid()} href={edge.node.url}>{edge.node.title}</a>
       ))}
     </LinkGroup>
 
