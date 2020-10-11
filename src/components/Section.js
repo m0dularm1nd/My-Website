@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import Wave from "./Wave.js"
 
+import { Fade } from "react-awesome-reveal";
+
 const SectionGroup = styled.div`
   background: url(${props => props.image});
   height: 850px;
@@ -63,6 +65,7 @@ const WaveTop = styled.div`
   transform: rotate(180deg);
 `
 
+
 const Section = props => (
   <SectionGroup image={props.image}>
     <WaveBottom>
@@ -71,11 +74,15 @@ const Section = props => (
     <WaveTop>
       <Wave></Wave>
     </WaveTop>
+    
     <SectionLogo src={props.logo} />
     <SectionTitleGroup>
+      <Fade cascade>
       <SectionTitle>{props.title}</SectionTitle>
-      <SectionText>{props.text}</SectionText>
-    </SectionTitleGroup>
+        <SectionText>{props.text}</SectionText>
+        </Fade>
+      </SectionTitleGroup>
+      
   </SectionGroup>
 )
 export default Section

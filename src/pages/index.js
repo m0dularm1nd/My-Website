@@ -10,6 +10,7 @@ import Wave from "../components/Wave.js"
 import StaticData from "../../StaticData.json"
 import Cell from "../components/Cell.js"
 import uuid from 'react-uuid'
+import { Fade, Zoom, headShake } from "react-awesome-reveal";
 
 
 class ScrollToTopOnMount extends React.Component {
@@ -50,8 +51,10 @@ const Land = () => (
         <div className="HeroGroup">
           <h1>Welcome to MindScape</h1>
           <p>Observer of the Phenomenon</p>
-          <Link to="/gallery">More Info...</Link> <br />
+          <Link to="/gallery">More Info</Link> <br />
+          
           <div className="logos">
+           
             <img
               src={require("../images/logo-xcode.png")}
               width="50"
@@ -81,8 +84,10 @@ const Land = () => (
               src={require("../images/logo-gatsby.png")}
               width="50"
               alt="test"
-            />
+              />
+              
           </div>
+          
           <div id="cards">
             <Wave />
             </div>
@@ -92,7 +97,9 @@ const Land = () => (
         <h2>
           Discover,<br></br> The WaveStore
         </h2>
+        <Zoom cascade triggerOnce >
         <div className="CardGroup">
+        
           <Card
             title="Component based"
             text="100$"
@@ -107,10 +114,13 @@ const Land = () => (
             title="Dynamic Data using API"
             text="300$"
             image={require("../images/card7.png")}
-          />
-        </div>
+            />
+           
+          </div>
+          </Zoom>
       </div>
       <div id="info">
+      
       <Section
         
         image={require("../images/card5.png")}
@@ -118,15 +128,19 @@ const Land = () => (
         title="Greatness Ahead,"
         text={`What was beyond the bend in the stream was unknown,
 Layout built using CSS grids and styled compenents from scratch.`}
-        />
+          />
+          
       </div>
+      
       <div id="contact">
-      <SectionCaption>Features and Tech</SectionCaption>
+        <SectionCaption>Features and Tech</SectionCaption>
+        <Fade>
       <SectionContentGroup>
         {StaticData.cells.map(cell => (
           <Cell key={uuid()} title={cell.title} image={cell.image} />
         ))}
-        </SectionContentGroup>
+          </SectionContentGroup>
+          </Fade>
         </div>
     </div>
   </Layout>
