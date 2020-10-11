@@ -14,12 +14,12 @@ const Gallery = () => (
   <Layout>
     <SEO title="Gallery" />
     <div className="page">
-    <div className="pageGroup">
-        <h1>Gallery</h1>
-        <Fade>
+      <div className="pageGroup">
+      <Fade>
+        <h1>Upcoming</h1>
           <p>What was beyond the bend in the stream was unknown,</p>
-          <img src={upcoming} alt="React Logo" />
         </Fade>
+        <img src={upcoming} alt="React Logo" />
       </div>
       <Wave />
     </div>

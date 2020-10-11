@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import uuid from 'react-uuid'
+import { Bounce } from "react-awesome-reveal";
 
 const FooterGroup = styled.div`
   background: #f1f3f5;
@@ -76,8 +77,11 @@ const Copyright = styled.div`
 
 const Footer = ({ data }) => (
   <FooterGroup>
+    
     <Button>
-      <a href="mailto:e.muhamedgamal@gmail.com">Email</a>
+    <Bounce>
+        <a href="mailto:e.muhamedgamal@gmail.com">Email</a>
+        </Bounce>
     </Button>
 
     <LinkGroup>

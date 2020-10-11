@@ -76,12 +76,13 @@ const Section = props => (
     </WaveTop>
     
     <SectionLogo src={props.logo} />
+
     <SectionTitleGroup>
-      <Fade cascade>
+    <Fade>
       <SectionTitle>{props.title}</SectionTitle>
         <SectionText>{props.text}</SectionText>
         </Fade>
-      </SectionTitleGroup>
+        </SectionTitleGroup>    
       
   </SectionGroup>
 )
