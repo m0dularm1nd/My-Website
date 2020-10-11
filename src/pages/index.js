@@ -10,7 +10,7 @@ import Wave from "../components/Wave.js"
 import StaticData from "../../StaticData.json"
 import Cell from "../components/Cell.js"
 import uuid from 'react-uuid'
-import { Fade, Zoom, headShake } from "react-awesome-reveal";
+import { Fade, Zoom, Slide } from "react-awesome-reveal";
 
 
 class ScrollToTopOnMount extends React.Component {
@@ -97,7 +97,7 @@ const Land = () => (
         <h2>
           Discover,<br></br> The WaveStore
         </h2>
-        <Zoom cascade triggerOnce >
+        <Zoom>
         <div className="CardGroup">
         
           <Card
@@ -134,13 +134,15 @@ Layout built using CSS grids and styled compenents from scratch.`}
       
       <div id="contact">
         <SectionCaption>Features and Tech</SectionCaption>
-        <Fade>
+        
       <SectionContentGroup>
-        {StaticData.cells.map(cell => (
-          <Cell key={uuid()} title={cell.title} image={cell.image} />
+          {StaticData.cells.map(cell => (
+            <Slide cascade direction="left">
+              <Cell key={uuid()} title={cell.title} image={cell.image} />
+              </Slide>
         ))}
           </SectionContentGroup>
-          </Fade>
+          
         </div>
     </div>
   </Layout>
