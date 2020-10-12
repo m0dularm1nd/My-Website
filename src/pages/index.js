@@ -10,7 +10,7 @@ import Wave from "../components/Wave.js"
 import StaticData from "../../StaticData.json"
 import Cell from "../components/Cell.js"
 import uuid from 'react-uuid'
-import { Fade, Zoom, Slide } from "react-awesome-reveal";
+import { Zoom, Slide } from "react-awesome-reveal";
 
 
 class ScrollToTopOnMount extends React.Component {

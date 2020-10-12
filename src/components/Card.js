@@ -1,6 +1,5 @@
 import React from "react"
 import "./Card.css"
-import { Fade, Zoom, Slide } from "react-awesome-reveal";
 
 
 const Card = props => (
