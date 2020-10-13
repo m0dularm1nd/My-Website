@@ -51,6 +51,24 @@
   transform: translateY(-3px);
 }
 
+.Header button2 {
+  padding: 5px 15px;
+  font-size: 20px;
+  border: none;
+  font-weight: 700;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.Header button2:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
 @media (max-width: 1060px) {
   .Header {
     padding: 15px 0;
