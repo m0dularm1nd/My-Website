@@ -7,9 +7,9 @@
 }
 
 .HeaderScrolled {
-  background: rgba(0, 0, 0, 0.8);
-  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(20px);
+  padding: 15px 0;
 }
 
 .HeaderGroup {
@@ -25,7 +25,9 @@
 .HeaderGroup img {
   display: block;
 }
-
+.HeaderGroup img:hover {
+  filter: saturate(150%);
+}
 .Header a {
   color: white;
   font-weight: 700;

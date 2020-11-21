@@ -1,9 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import uuid from 'react-uuid'
-import { Bounce } from "react-awesome-reveal";
+import uuid from "react-uuid"
+import { Bounce } from "react-awesome-reveal"
 import { Link } from "gatsby"
-
 
 const FooterGroup = styled.div`
   background: #f1f3f5;
@@ -79,18 +78,16 @@ const Copyright = styled.div`
 
 const Footer = ({ data }) => (
   <FooterGroup>
-        
     <Button id="contact">
-
-    
-    <Bounce>
+      <Bounce>
         <a href="mailto:e.muhamedgamal@gmail.com">Email</a>
-        </Bounce>
+      </Bounce>
     </Button>
-
     <LinkGroup>
       {data.allContentfulMyWebsiteLink.edges.map(edge => (
-        <Link key={uuid()} to={edge.node.url}>{edge.node.title}</Link>
+        <Link key={uuid()} to={edge.node.url}>
+          {edge.node.title}
+        </Link>
       ))}
     </LinkGroup>
 

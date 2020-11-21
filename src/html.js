@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import LoaderSVG from './images/loader.svg'
+import LoaderSVG from "./images/loader.svg"
 
 export default function HTML(props) {
   return (
@@ -17,29 +17,23 @@ export default function HTML(props) {
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
         <div
-              key={`loader`}
-              id="___loader"
+          key={`loader`}
+          id="___loader"
           style={{
-                overflow: "hidden",
-                alignItems: "center",
-                backgroundColor: "#ffffff",
-                display: "flex",
-                justifyContent: "center",
-                position: "absolute",
-                left: 0,
-                top: 0,
-                right: 0,
-                bottom: 0,
-                zIndex: 101,
-                
-              }}
-           >
-           <img 
-              src={LoaderSVG} 
-              alt="loading spinner" 
-              width="128" 
-              height="128"
-           />
+            overflow: "hidden",
+            alignItems: "center",
+            backgroundColor: "#ffffff",
+            display: "flex",
+            justifyContent: "center",
+            position: "absolute",
+            left: 0,
+            top: 0,
+            right: 0,
+            bottom: 0,
+            zIndex: 1000,
+          }}
+        >
+          <img src={LoaderSVG} alt="loading spinner" width="128" height="128" />
         </div>
         <div
           key={`body`}

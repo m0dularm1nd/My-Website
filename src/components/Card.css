@@ -3,10 +3,10 @@
   height: 225px;
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
   justify-self: center;
   vertical-align: middle;
@@ -17,30 +17,55 @@
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
 }
 
-.Card:hover img {
-  transform: translateY(-20px);
-}
+/* .Card:hover img {
+  transform: translateY(-10px);
+} */
 
 .Card img {
   position: absolute;
+  justify-self: center;
   top: 0;
   height: 110%;
   z-index: -1;
   transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border-radius: 20px;
 }
 
 .Card h3 {
   color: white;
-  font-size: 30px;
-  margin: 20px 20px 20px 20px;
+  font-size: 28px;
+  margin: 20px 20px 0px 20px;
   width: 190px;
+  justify-self: center;
+  text-align: center;
+}
+
+.Card p1 {
+  color: white;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 10px 20px 0 20px;
+  width: 190px;
+  align-self: start;
+  white-space: pre-wrap;
 }
 
 .Card p {
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 12px;
   margin: 20px 20px 20px 20px;
   align-self: end;
+  justify-self: center;
+  white-space: pre-wrap;
+}
+
+.Card .back {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  justify-self: center;
+  text-align: center;
+  border-radius: 5px;
 }

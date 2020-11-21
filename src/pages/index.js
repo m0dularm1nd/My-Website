@@ -28,6 +28,7 @@ const SectionCaption = styled.p`
   color: #94a4ba;
   text-align: center;
 `
+
 const SectionContentGroup = styled.div`
   max-width: 800px;
   margin: 0 auto 100px;
@@ -91,21 +92,33 @@ const Land = () => (
         <h2>
           Discover,<br></br> The WaveStore
         </h2>
-        <Zoom>
+        <Zoom triggerOnce="true">
           <div className="CardGroup">
             <Card
-              title="Component based"
-              text="100$"
+              title="Add"
+              text="Read More"
+              text2={`• Point 1 🪐
+• Point 2 ⭐️
+• Point 3 🚧
+`}
               image={require("../images/card2.png")}
             />
             <Card
-              title="Add or Edit more Content"
-              text="200$"
+              title="Dynamic"
+              text="Read More"
+              text2={`• Point 1 🛶
+• Point 2 ⛵️
+• Point 3 🚀
+`}
               image={require("../images/card6.png")}
             />
             <Card
-              title="Dynamic Data using API"
-              text="300$"
+              title="Components"
+              text="Read More"
+              text2={`• Point 1 🗺
+• Point 2 ⚓️
+• Point 3 🏝
+`}
               image={require("../images/card7.png")}
             />
           </div>
@@ -124,7 +137,7 @@ What was beyond the bend in the stream was unknown,`}
         <SectionCaption>Features and Tech</SectionCaption>
         <SectionContentGroup>
           {StaticData.cells.map(cell => (
-            <Slide cascade direction="left">
+            <Slide cascade direction="left" triggerOnce="true">
               <Cell key={uuid()} title={cell.title} image={cell.image} />
             </Slide>
           ))}

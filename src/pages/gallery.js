@@ -16,7 +16,7 @@ const Gallery = () => (
         <Fade>
           <h1>Upcoming</h1>
           <p>What was beyond the bend in the stream was unknown,</p>
-          <img src={upcoming} alt="React Logo" />
+          <img src={upcoming} alt="icon" />
         </Fade>
       </div>
       <Wave />
