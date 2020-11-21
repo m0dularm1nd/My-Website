@@ -77,7 +77,7 @@ const Section = props => (
     <SectionLogo src={props.logo} />
 
     <SectionTitleGroup>
-      <Fade>
+      <Fade triggerOnce="true">
         <SectionTitle>{props.title}</SectionTitle>
         <SectionText>{props.text}</SectionText>
       </Fade>
