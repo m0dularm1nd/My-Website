@@ -97,27 +97,27 @@ const Land = () => (
             <Card
               title="Add"
               text="Read More"
-              text2={`• Point 1 🪐
-• Point 2 ⭐️
-• Point 3 🚧
+              text2={`• 🪐
+• ⭐️
+• 🚧
 `}
               image={require("../images/card2.png")}
             />
             <Card
               title="Dynamic"
               text="Read More"
-              text2={`• Point 1 🛶
-• Point 2 ⛵️
-• Point 3 🚀
+              text2={`• 🛶
+• ⛵️
+• 🚀
 `}
               image={require("../images/card6.png")}
             />
             <Card
               title="Components"
               text="Read More"
-              text2={`• Point 1 🗺
-• Point 2 ⚓️
-• Point 3 🏝
+              text2={`• 🗺
+• ⚓️
+• 🏝
 `}
               image={require("../images/card7.png")}
             />
