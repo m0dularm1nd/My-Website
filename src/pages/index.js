@@ -99,7 +99,7 @@ const Land = () => (
               text="Read More"
               text2={`• 🪐
 • ⭐️
-• 🚧
+• 🚧 test
 `}
               image={require("../images/card2.png")}
             />
@@ -114,7 +114,7 @@ const Land = () => (
             />
             <Card
               title="Components"
-              text="Read More"
+              text="Read More+"
               text2={`• 🗺
 • ⚓️
 • 🏝
