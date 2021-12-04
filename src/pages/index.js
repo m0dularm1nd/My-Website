@@ -92,33 +92,24 @@ const Land = () => (
         <h2>
           Discover,<br></br> The WaveStore
         </h2>
-        <Zoom triggerOnce="true">
+        <Zoom >
           <div className="CardGroup">
             <Card
               title="Add"
               text="Read More"
-              text2={`• 🪐
-• ⭐️
-• 🚧 test
-`}
+              text2={``}
               image={require("../images/card2.png")}
             />
             <Card
               title="Dynamic"
               text="Read More"
-              text2={`• 🛶
-• ⛵️
-• 🚀
-`}
+              text2={``}
               image={require("../images/card6.png")}
             />
             <Card
               title="Components"
-              text="Read More+"
-              text2={`• 🗺
-• ⚓️
-• 🏝
-`}
+              text="Read More"
+              text2={``}
               image={require("../images/card7.png")}
             />
           </div>
@@ -137,8 +128,8 @@ What was beyond the bend in the stream was unknown,`}
         <SectionCaption>Features and Tech</SectionCaption>
         <SectionContentGroup>
           {StaticData.cells.map(cell => (
-            <Slide cascade direction="left" triggerOnce="true">
-              <Cell key={uuid()} title={cell.title} image={cell.image} />
+            <Slide key={uuid()} cascade direction="left" >
+              <Cell title={cell.title} image={cell.image} />
             </Slide>
           ))}
         </SectionContentGroup>
