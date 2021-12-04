@@ -22,25 +22,6 @@ class ScrollToTopOnMount extends React.Component {
   }
 }
 
-const SectionCaption = styled.p`
-  font-weight: 700;
-  font-size: 24px;
-  color: #94a4ba;
-  text-align: center;
-`
-
-const SectionContentGroup = styled.div`
-  max-width: 800px;
-  margin: 0 auto 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-  padding: 0 30px;
-
-  @media (max-width: 720px) {
-    grid-template-columns: 1fr;
-  }
-`
 
 const Land = () => (
   <Layout>
@@ -52,38 +33,38 @@ const Land = () => (
           <h1>Welcome to MindScape</h1>
           <p>Observer of the Phenomenon</p>
           <Link to="/gallery">More Info</Link> <br />
-          <div className="logos">
-            <img
-              src={require("../images/logo-xcode.png")}
-              width="50"
-              alt="test"
-            />
-            <img
-              src={require("../images/logo-figma.png")}
-              width="50"
-              alt="test"
-            />
-            <img
-              src={require("../images/logo-swift.png")}
-              width="50"
-              alt="test"
-            />
-            <img
-              src={require("../images/logo-react.png")}
-              width="50"
-              alt="test"
-            />
-            <img
-              src={require("../images/logo-sketch.png")}
-              width="50"
-              alt="test"
-            />
-            <img
-              src={require("../images/logo-gatsby.png")}
-              width="50"
-              alt="test"
-            />
-          </div>
+          {/* <div className="logos"> */}
+          {/*   <img */}
+          {/*     src={require("../images/logo-xcode.png")} */}
+          {/*     width="50" */}
+          {/*     alt="test" */}
+          {/*   /> */}
+          {/*   <img */}
+          {/*     src={require("../images/logo-figma.png")} */}
+          {/*     width="50" */}
+          {/*     alt="test" */}
+          {/*   /> */}
+          {/*   <img */}
+          {/*     src={require("../images/logo-swift.png")} */}
+          {/*     width="50" */}
+          {/*     alt="test" */}
+          {/*   /> */}
+          {/*   <img */}
+          {/*     src={require("../images/logo-react.png")} */}
+          {/*     width="50" */}
+          {/*     alt="test" */}
+          {/*   /> */}
+          {/*   <img */}
+          {/*     src={require("../images/logo-sketch.png")} */}
+          {/*     width="50" */}
+          {/*     alt="test" */}
+          {/*   /> */}
+          {/*   <img */}
+          {/*     src={require("../images/logo-gatsby.png")} */}
+          {/*     width="50" */}
+          {/*     alt="test" */}
+          {/*   /> */}
+          {/* </div> */}
           <Wave />
           <div id="cards"></div>
         </div>
@@ -139,3 +120,24 @@ What was beyond the bend in the stream was unknown,`}
 )
 
 export default Land
+
+
+const SectionCaption = styled.p`
+  font-weight: 700;
+  font-size: 24px;
+  color: #94a4ba;
+  text-align: center;
+`
+
+const SectionContentGroup = styled.div`
+  max-width: 800px;
+  margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  padding: 0 30px;
+
+  @media (max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
+`
